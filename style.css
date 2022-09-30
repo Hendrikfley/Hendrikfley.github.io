@@ -1,4 +1,21 @@
 body {
+    background-color: whitesmoke;
+}
+h1{
+    color: goldenrod;
+    font-weight: bold;
+}
+html{
+    font-family: sans-serif;
+}
+#console-tag{
+    border: 1px black solid;
+    background-color: white;
+    padding: 2px;
+    font-family: monospace;
+}
 
-color: darkslategrey
+a:visited {
+    color:aqua;
+
 }
