@@ -1,21 +1,48 @@
+/* This is a comment that will not be read by browser */
 body {
     background-color: whitesmoke;
+    font-size: 20px;
 }
-h1{
+
+h1 {
     color: goldenrod;
     font-weight: bold;
+    font-size: 3em;
 }
-html{
+
+h2, h3 {
+    font-size: 1.5em;
+}
+
+html {
     font-family: sans-serif;
 }
-#console-tag{
+
+
+ol {
+    list-style-type: lower-roman
+
+}
+
+#console-tag {
     border: 1px black solid;
     background-color: white;
     padding: 2px;
     font-family: monospace;
 }
 
-a:visited {
-    color:aqua;
+a {
+    text-decoration: none;
+}
 
+a:visited {
+    color: goldenrod
+}
+
+a:link {
+    color: goldenrod
+}
+
+a:hover {
+    color: navy
 }
