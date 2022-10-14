@@ -24,6 +24,11 @@ ol {
 
 }
 
+/*Classes are refered to via a '.'*/
+/* IDs are refered to via a '#'. 
+Stylingwise they are to be avoided. 
+But you can add them to the URLs */
+
 #console-tag {
     border: 1px black solid;
     background-color: white;
