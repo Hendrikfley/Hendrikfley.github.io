@@ -9,6 +9,8 @@
     background-color: #5995DA; /* Blue */
     padding: 20px 0;
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: center;
 }
 
@@ -34,6 +36,7 @@
 }
 
 .header-container {
+  border: 1px solid red;
     color: #5995DA;
     background-color: #D6E9FE;
     display: flex;
