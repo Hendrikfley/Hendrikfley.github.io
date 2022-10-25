@@ -26,7 +26,7 @@ nav {
     width: 100%;
     height: 150px;
     padding: 50px;
-    background: #b2d6ffe0;
+    background: #000000e0;
 }
 
 .logo {
@@ -55,6 +55,18 @@ nav {
     /* border: 1px solid red; */
     list-style-type: none;
     margin-right: 50px;
+    color: whitesmoke;
+}
+.menu a:visited {
+    color: whitesmoke;
+}
+
+.menu a:link {
+    color: whitesmoke;
+}
+
+.menu a:hover {
+    color: goldenrod;
 }
 
 .menu>li:last-of-type {
@@ -79,7 +91,7 @@ nav {
 .dropdown:hover .tutorials-menu {
     display: flex;
     flex-direction: column;
-    background: #b2caff;
+    background: #000000e0;
     border-radius: 5px;
     padding-top: 80px;
 
