@@ -17,7 +17,7 @@ header {
     z-index: 1;
 }
 
-nav {
+.desktop {
     /* border: 1px solid red; */
     position: fixed;
     display: flex;
@@ -29,10 +29,26 @@ nav {
     background: #000000e0;
 }
 
+.mobile {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+
 .logo {
     /* border: 1px solid red; */
     margin-right: auto;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 200px;
 }
 
 .link {
@@ -56,7 +72,9 @@ nav {
     list-style-type: none;
     margin-right: 50px;
     color: whitesmoke;
+    font-size: 1em;
 }
+
 .menu a:visited {
     color: whitesmoke;
 }
@@ -114,14 +132,14 @@ nav {
 
 body {
     background-color: whitesmoke;
-    font-size: 30px;
+    font-size: 20px;
     z-index: 0;
 }
 
 .content-container {
     /* border: 1px solid red; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     position: absolute;
     margin-top: 150px;
@@ -139,8 +157,9 @@ article {
 h1 {
     color: goldenrod;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
 }
+
 
 h2,
 h3 {
@@ -171,4 +190,100 @@ a:link {
 
 a:hover {
     color: navy
+}
+
+
+@media only screen and (max-width: 660px) {
+    .mobile {
+        display: block;
+        /* border: 1px solid red; */
+        position: fixed;
+        display: flex;
+        justify-content: right;
+        /* height: 150px; */
+        width: 100%;
+        height: 150px;
+        padding: 50px;
+        background: #000000e0;
+        z-index: 0;
+    }
+
+    .mobile button {
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        border-radius: 2px;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .mobile button.display {
+        border: 1.5px solid goldenrod;
+    }
+
+    .bar {
+        background-color: #FFF;
+        display: flex;
+        height: 1.5px;
+        position: absolute;
+        width: 75%;
+        z-index: 99;
+    }
+
+    .bar.display {
+        background-color: goldenrod
+    }
+
+    .top {
+        top: 12px
+    }
+
+    .bottom {
+        bottom: 12px;
+    }
+
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        position: fixed;
+        z-index: 9;
+        list-style-type: none;
+    }
+
+    .mobile-menu-container > li {
+        text-align: right;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        
+    }
+
+    .mobile-menu-container a:visited {
+    color: whitesmoke
+    }
+
+    .mobile-menu-container a:link {
+    color: whitesmoke
+    }
+
+    .mobile-menu-container a:hover {
+    color: goldenrod
+    }
+
+    .mobile-menu-container.display {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        width: 100%;
+        height: calc(100% - 150px);
+        padding: 50px;
+        background: #000000e0;
+    }
+
 }
