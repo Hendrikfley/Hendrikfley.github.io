@@ -13,7 +13,7 @@ height: auto;
 
     background-image: url("../assets/JPG/coffee-model_horizontal.jpg");
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 650px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -50,13 +50,13 @@ height: auto;
 
 .background-image-4 {
 
-    background-image: url("../assets/JPG/pong_horizontal.jpg");
+    background-image: url("../assets/JPG/octopus_horizontal.jpg");
     /* Set a specific height */
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }

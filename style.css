@@ -17,6 +17,7 @@ header {
     z-index: 1;
 }
 
+
 .desktop {
     /* border: 1px solid red; */
     position: fixed;
@@ -72,6 +73,14 @@ header {
     margin-right: 50px;
     color: whitesmoke;
     font-size: 1em;
+}
+
+.selfie img{
+    display: block;
+    float: left;
+    position: center;
+    max-width: 300px;
+    /* border: 3px solid red; */
 }
 
 .menu a:visited {
